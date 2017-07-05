@@ -59,7 +59,6 @@ public class ComparatorControllerIntegrationTest {
 		Assert.assertThat(document.getLeft(), Matchers.is("dGVzdGluZyB0aGUgYmFzZTY0"));
 		Assert.assertThat(document.getRight(), Matchers.isEmptyOrNullString());
 	}
-
 	
 	private void right() throws Exception {
 		mvc.perform(MockMvcRequestBuilders.post("/v1/diff/1/right").accept(MediaType.APPLICATION_JSON)
